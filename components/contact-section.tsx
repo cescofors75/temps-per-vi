@@ -36,14 +36,14 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">{t.contact.title}</h2>
-        <p className="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 text-center text-[#8c1c3c]">{t.contact.title}</h2>
+        <p className="text-lg sm:text-xl text-center mb-8 sm:mb-12 max-w-2xl mx-auto text-gray-600">
           {t.contact.subtitle}
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">Envia'ns un missatge</h3>
             <form onSubmit={handleSubmit} className="space-y-4">

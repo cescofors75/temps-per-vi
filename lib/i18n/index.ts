@@ -1,11 +1,15 @@
 import { ca } from './ca'
 import { es } from './es'
+import { fr } from './fr'
+import { en } from './en'
 
-export type Language = 'ca' | 'es'
+export type Language = 'ca' | 'es' | 'fr' | 'en'
 
 export const translations = {
   ca,
-  es
+  es,
+  fr,
+  en
 }
 
 export const getTranslations = (lang: Language) => translations[lang]
