@@ -29,6 +29,7 @@ export function ContactSection() {
       service: "",
       message: "",
     });
+    
     alert("Missatge enviat correctament. Ens posarem en contacte amb tu aviat.");
   };
 
