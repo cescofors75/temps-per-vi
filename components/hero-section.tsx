@@ -8,6 +8,13 @@ import { useLanguage } from "@/lib/language-context";
 export function HeroSection() {
   const { t } = useLanguage();
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative h-screen flex items-center">
       <img
@@ -32,10 +39,16 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="px-6 py-3 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium">
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="px-6 py-3 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium transition-colors"
+            >
               {t.hero.contact}
             </button>
-            <button className="px-6 py-3 border-2 border-white text-white hover:bg-white/20 rounded-lg font-medium">
+            <button 
+              onClick={() => scrollToSection('services')} 
+              className="px-6 py-3 border-2 border-white text-white hover:bg-white/20 rounded-lg font-medium transition-colors"
+            >
               {t.hero.services}
             </button>
           </div>

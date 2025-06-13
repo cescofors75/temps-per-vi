@@ -1,7 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
+
 export function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -12,8 +17,7 @@ export function Footer() {
               <p className="text-sm text-gray-400">Melcior Montero</p>
             </div>
             <p className="text-gray-400 mb-4">
-              Serveis de sommelier professional a la Costa Brava. Formació especialitzada, 
-              tasts personalitzats i experiències úniques al voltant del món del vi.
+              {t.footer.description}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
@@ -55,31 +59,31 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Enllaços ràpids</h3>
+            <h3 className="font-bold text-lg mb-4">{t.footer.quickLinks}</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
-                  Inici
+                  {t.navigation.home}
                 </a>
               </li>
               <li>
                 <a href="#about" className="text-gray-400 hover:text-white">
-                  Sobre mi
+                  {t.navigation.about}
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-white">
-                  Serveis
+                  {t.navigation.services}
                 </a>
               </li>
               <li>
                 <a href="#events" className="text-gray-400 hover:text-white">
-                  Esdeveniments
+                  {t.navigation.events}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-gray-400 hover:text-white">
-                  Contacte
+                  {t.navigation.contact}
                 </a>
               </li>
             </ul>
@@ -110,7 +114,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Temps per Vi - Melcior Montero. Tots els drets reservats.
+            &copy; {new Date().getFullYear()} Temps per Vi - Melcior Montero. {t.footer.rights}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm">

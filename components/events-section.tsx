@@ -1,12 +1,17 @@
-import { Wine, Users, GraduationCap, Store, CalendarDays, Utensils, Phone, Mail, MapPin, Send, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+"use client"
+
+import { CalendarDays } from "lucide-react";
+import { useLanguage } from "@/lib/language-context";
 
 export function EventsSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="events" className="py-20 bg-[#8c1c3c]/5">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">Propers Esdeveniments</h2>
+        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">{t.events.title}</h2>
         <p className="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">
-          Descobreix les nostres experiències de tast i formació especialitzada
+          {t.events.subtitle}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

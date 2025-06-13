@@ -1,34 +1,32 @@
-import { Wine, Users, GraduationCap, Store, CalendarDays, Utensils, Phone, Mail, MapPin, Send, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+"use client"
+
+import { Wine, Users, GraduationCap, Store } from "lucide-react";
+import { useLanguage } from "@/lib/language-context";
 
 export function ExperienceSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="experience" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">Experiència Professional</h2>
+        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">{t.experience.title}</h2>
         <p className="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">
-          Una trajectòria professional dedicada a l'excel·lència en el món del vi i l'hospitalitat
+          {t.experience.subtitle}
         </p>
 
         <div className="space-y-12">
           <ExperienceItem
-            years="2010-2020"
-            title="Maître-Sommelier"
+            years={t.experience.canRoca.period}
+            title={t.experience.canRoca.title}
             company="El Celler de Can Roca"
-            description="Responsable de la selecció de vins i maridatges en un dels millors restaurants del món amb 3 estrelles Michelin. Vaig començar des de baix, creixent a cada pas, fins a convertir-me en un dels maîtres d'aquest temple gastronòmic."
+            description={t.experience.canRoca.description}
           />
 
           <ExperienceItem
-            years="2020-Present"
-            title="Fundador i Sommelier Independent"
-            company="Temps per Vi"
-            description="Creació d'un projecte per elevar el servei en hotels i restaurants mitjançant formacions especialitzades. Ofereixo tasts de vi, consultoria i experiències úniques a la Costa Brava."
-          />
-
-          <ExperienceItem
-            years="2018-Present"
-            title="Formador Especialitzat"
-            company="Sector Hostaleria"
-            description="Formador col·laborador en diverses escoles d'hostaleria i empreses del sector, compartint coneixements sobre servei d'excel·lència i el món del vi."
+            years={t.experience.education.period}
+            title={t.experience.education.title}
+            company="Formació Professional"
+            description={t.experience.education.description}
           />
         </div>
 
