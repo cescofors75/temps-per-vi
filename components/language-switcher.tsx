@@ -1,12 +1,12 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Globe } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 export function LanguageSwitcher() {
-  const [language, setLanguage] = useState<"ca" | "es">("ca")
+  const { language, setLanguage } = useLanguage()
 
   return (
     <div className="fixed top-4 right-4 z-50">

@@ -1,76 +1,57 @@
-import { Wine, Users, GraduationCap, Store, CalendarDays, Utensils, Phone, Mail, MapPin, Send, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+"use client"
+
+import { Wine, Users, GraduationCap, Store, FileText } from "lucide-react";
+import { useLanguage } from "@/lib/language-context";
 
 export function ServicesSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">Serveis</h2>
+        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">{t.services.title}</h2>
         <p className="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">
-          Ofereixo una àmplia gamma de serveis relacionats amb el món del vi, adaptats a les necessitats de cada client
+          {t.services.subtitle}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ServiceCard
             icon={<Wine />}
-            title="Tasts de Vi a Domicili"
-            description="Experiències sensorials personalitzades. Tast de 6 vins excepcionals per particulars, restaurants i empreses. Formatiu o lúdic, adaptat a les teves preferències."
+            title={t.services.consulting.title}
+            description={t.services.consulting.description}
           />
 
           <ServiceCard
             icon={<GraduationCap />}
-            title="Formació d'Equips de Sala"
-            description="Formació especialitzada de 8 hores per a personal de restaurants i hotels. Excel·lència en el servei, motivació d'equip i coneixement del vi. Bonificable per FUNDAE."
+            title={t.services.training.title}
+            description={t.services.training.description}
           />
 
           <ServiceCard
             icon={<Users />}
-            title="Esdeveniments Privats"
-            description="Serveis de sommelier per a esdeveniments privats, celebracions especials i activitats de team building per empreses."
+            title={t.services.events.title}
+            description={t.services.events.description}
           />
 
           <ServiceCard
             icon={<Store />}
-            title="Assessorament Professional"
-            description="Consultoria per a restaurants, hotels i espais d'esdeveniments sobre cartes de vi, servei i posicionament."
+            title={t.services.management.title}
+            description={t.services.management.description}
           />
 
-          <ServiceCard
-            icon={<CalendarDays />}
-            title="Subscripció Mensual"
-            description="Comunitat de descoberta vinícola. Cada mes una ampolla seleccionada amb tast organolèptic en línia i notes detallades."
-          />
-
-          <ServiceCard
-            icon={<Utensils />}
-            title="Maridatges Especials"
-            description="Creació d'experiències de maridatge úniques entre gastronomia local i vins seleccionats per a ocasions especials."
-          />
         </div>
 
-        <div className="mt-16 bg-white p-8 rounded-lg shadow-sm">
-          <h3 className="text-2xl font-bold mb-6 text-center text-[#8c1c3c]">El Nostre Gran Valor: La Personalització</h3>
-          <p className="text-center text-lg mb-6 text-gray-600">
-            Cada tast que organitzem és únic i pensat exclusivament per a tu. Ens adaptem completament a les teves preferències.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h4 className="font-bold mb-2">Personalitzem Tot</h4>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Nombre de vins</li>
-                <li>• Estil del tast (formatiu, lúdic o combinat)</li>
-                <li>• Tipus de vi i fil conductor</li>
-                <li>• Durada de l'experiència</li>
-                <li>• Espai (casa, empresa o lloc especial)</li>
-              </ul>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h4 className="font-bold mb-2">Experiència Única</h4>
-              <p className="text-sm text-gray-600">
-                Viatge per diferents regions vitivinícoles, on parlarem del clima, terreny, varietat 
-                i posarem en valor la grandíssima feina que hi ha al darrere de cada ampolla.
-              </p>
-            </div>
-          </div>
+        {/* Botón para el dossier completo */}
+        <div className="mt-12 text-center">
+          <a 
+            href="/Tempspervi.pdf"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium transition-colors"
+          >
+            <FileText className="h-5 w-5" />
+            {t.services.downloadDossier}
+          </a>
         </div>
       </div>
     </section>

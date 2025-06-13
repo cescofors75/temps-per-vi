@@ -8,9 +8,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Send } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 // Contact Section actualizado
 export function ContactSection() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,9 +38,9 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">Contacte</h2>
+        <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">{t.contact.title}</h2>
         <p className="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">
-          Posa't en contacte amb nosaltres per a més informació o per reservar una experiència personalitzada
+          {t.contact.subtitle}
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -47,7 +49,7 @@ export function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1">
-                  Nom complet
+                  {t.contact.name}
                 </label>
                 <input
                   id="name"
@@ -60,7 +62,7 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-1">
-                  Correu electrònic
+                  {t.contact.email}
                 </label>
                 <input
                   id="email"
@@ -105,7 +107,7 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-1">
-                  Missatge
+                  {t.contact.message}
                 </label>
                 <textarea
                   id="message"
@@ -119,7 +121,7 @@ export function ContactSection() {
 
               <button type="submit" className="w-full px-6 py-3 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium">
                 <Send className="mr-2 h-4 w-4 inline" />
-                Enviar missatge
+                {t.contact.send}
               </button>
             </form>
           </div>

@@ -1,24 +1,22 @@
+"use client"
+
+import { useLanguage } from "@/lib/language-context"
+
 export function AboutSection() {
+  const { t } = useLanguage()
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-[#8c1c3c]">Sobre Melcior Montero</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[#8c1c3c]">{t.about.title}</h2>
+            <h3 className="text-xl font-semibold mb-4 text-gray-700">{t.about.subtitle}</h3>
             <p className="text-lg mb-4">
-              Sóc Melcior Montero, i estic al darrere de Temps per Vi, un projecte que neix amb l'objectiu
-              d'elevar el servei en hotels i restaurants mitjançant formacions especialitzades per a equips
-              de sala.
+              {t.about.description}
             </p>
             <p className="text-lg mb-4">
-              La meva dedicació i passió em van portar a entrar en l'elit de la gastronomia. Vaig tenir el
-              privilegi de treballar durant més de 10 anys a El Celler de Can Roca, al costat dels germans
-              Roca. Allà vaig aprendre que l'hospitalitat és un art, el treball en equip és la clau de l'èxit i que
-              els petits detalls marquen la diferència.
-            </p>
-            <p className="text-lg mb-4">
-              A part d'això ofereixo tast de vins a domicili a nivell formatiu, per aprendre d'aquest apassionant
-              món o simplement, gaudir i passar una bona estona amb família i amics.
+              {t.about.mission}
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-4">
