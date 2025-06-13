@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Send } from "lucide-react"
 
+// Contact Section actualizado
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,42 +17,40 @@ export function ContactSection() {
     phone: "",
     service: "",
     message: "",
-  })
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log(formData)
-    // Reset form
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    console.log(formData);
     setFormData({
       name: "",
       email: "",
       phone: "",
       service: "",
       message: "",
-    })
-    // Show success message
-    alert("Missatge enviat correctament. Ens posarem en contacte amb tu aviat.")
-  }
+    });
+    alert("Missatge enviat correctament. Ens posarem en contacte amb tu aviat.");
+  };
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-2 text-center text-[#8c1c3c]">Contacte</h2>
         <p className="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">
-          Posa&apos;t en contacte amb nosaltres per a més informació o per reservar una experiència
+          Posa't en contacte amb nosaltres per a més informació o per reservar una experiència personalitzada
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6">Envia&apos;ns un missatge</h3>
+            <h3 className="text-2xl font-bold mb-6">Envia'ns un missatge</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1">
                   Nom complet
                 </label>
-                <Input
+                <input
                   id="name"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8c1c3c]"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
@@ -62,9 +61,10 @@ export function ContactSection() {
                 <label htmlFor="email" className="block text-sm font-medium mb-1">
                   Correu electrònic
                 </label>
-                <Input
+                <input
                   id="email"
                   type="email"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8c1c3c]"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
@@ -75,8 +75,9 @@ export function ContactSection() {
                 <label htmlFor="phone" className="block text-sm font-medium mb-1">
                   Telèfon
                 </label>
-                <Input
+                <input
                   id="phone"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8c1c3c]"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 />
@@ -84,43 +85,41 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="service" className="block text-sm font-medium mb-1">
-                  Servei d&apos;interès
+                  Servei d'interès
                 </label>
-                <Select
+                <select
                   value={formData.service}
-                  onValueChange={(value) => setFormData({ ...formData, service: value })}
+                  onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8c1c3c]"
                 >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Selecciona un servei" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="tasting">Tasts de vi</SelectItem>
-                    <SelectItem value="training">Formació de personal</SelectItem>
-                    <SelectItem value="events">Esdeveniments privats</SelectItem>
-                    <SelectItem value="consulting">Assessorament a cellers</SelectItem>
-                    <SelectItem value="tours">Rutes enoturístiques</SelectItem>
-                    <SelectItem value="pairing">Maridatges</SelectItem>
-                  </SelectContent>
-                </Select>
+                  <option value="">Selecciona un servei</option>
+                  <option value="tasting">Tasts de vi a domicili</option>
+                  <option value="training">Formació d'equips de sala</option>
+                  <option value="events">Esdeveniments privats</option>
+                  <option value="consulting">Assessorament professional</option>
+                  <option value="subscription">Subscripció mensual</option>
+                  <option value="pairing">Maridatges especials</option>
+                </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-1">
                   Missatge
                 </label>
-                <Textarea
+                <textarea
                   id="message"
                   rows={4}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8c1c3c]"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-[#8c1c3c] hover:bg-[#6d1530]">
-                <Send className="mr-2 h-4 w-4" />
+              <button type="submit" className="w-full px-6 py-3 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium">
+                <Send className="mr-2 h-4 w-4 inline" />
                 Enviar missatge
-              </Button>
+              </button>
             </form>
           </div>
 
@@ -131,7 +130,7 @@ export function ContactSection() {
                 <Phone className="h-5 w-5 mr-4 text-[#8c1c3c] mt-1" />
                 <div>
                   <h4 className="font-bold">Telèfon</h4>
-                  <p className="text-gray-600">+34 612 345 678</p>
+                  <p className="text-gray-600">607 625 760</p>
                 </div>
               </div>
 
@@ -146,7 +145,7 @@ export function ContactSection() {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-4 text-[#8c1c3c] mt-1" />
                 <div>
-                  <h4 className="font-bold">Zona d&apos;influència</h4>
+                  <h4 className="font-bold">Zona d'influència</h4>
                   <p className="text-gray-600">Costa Brava i rodalies</p>
                   <p className="text-gray-600">Girona, Catalunya</p>
                 </div>
@@ -170,9 +169,19 @@ export function ContactSection() {
                 </div>
               </div>
             </div>
+
+            <div className="mt-12 bg-white p-6 rounded-lg">
+              <h4 className="font-bold mb-4">Informació Important</h4>
+              <p className="text-sm text-gray-600 mb-2">
+                <strong>FUNDAE Bonificable:</strong> Les nostres formacions poden ser bonificades total o parcialment a través de FUNDAE.
+              </p>
+              <p className="text-sm text-gray-600">
+                <strong>Personalització:</strong> Cada experiència s'adapta completament a les teves necessitats i preferències.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

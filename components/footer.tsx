@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
-
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -9,64 +8,48 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="mb-4">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/480280779_17869262043313976_971015795609725576_n.jpg-hYdSdeAMEMwFiP8SuJdRpmEap0Fqk6.jpeg"
-                alt="Temps per Vi logo"
-                width={150}
-                height={75}
-                className="object-contain"
-              />
+              <h3 className="text-2xl font-bold text-[#8c1c3c] mb-2">Temps per Vi</h3>
+              <p className="text-sm text-gray-400">Melcior Montero</p>
             </div>
             <p className="text-gray-400 mb-4">
-              Serveis de sommelier professional a la Costa Brava. Experiències úniques al voltant del món del vi.
+              Serveis de sommelier professional a la Costa Brava. Formació especialitzada, 
+              tasts personalitzats i experiències úniques al voltant del món del vi.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </Link>
+              </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Serveis</h3>
+            <h3 className="font-bold text-lg mb-4">Serveis Principals</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Tasts de Vi
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Tasts de Vi a Domicili
+                </a>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Formació de Personal
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Formació d'Equips de Sala
+                </a>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Esdeveniments Privats
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Assessorament a Cellers
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Assessorament Professional
+                </a>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Rutes Enoturístiques
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Subscripció Mensual
+                </a>
               </li>
             </ul>
           </div>
@@ -75,29 +58,29 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Enllaços ràpids</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Inici
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#about" className="text-gray-400 hover:text-white">
+                <a href="#about" className="text-gray-400 hover:text-white">
                   Sobre mi
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-white">
+                <a href="#services" className="text-gray-400 hover:text-white">
                   Serveis
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#events" className="text-gray-400 hover:text-white">
+                <a href="#events" className="text-gray-400 hover:text-white">
                   Esdeveniments
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#contact" className="text-gray-400 hover:text-white">
+                <a href="#contact" className="text-gray-400 hover:text-white">
                   Contacte
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -107,11 +90,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-gray-400">
                 <span className="block">Telèfon:</span>
-                <span className="block">+34 612 345 678</span>
+                <span className="block">607 625 760</span>
               </li>
               <li className="text-gray-400">
                 <span className="block">Email:</span>
                 <span className="block">info@tempspervi.com</span>
+              </li>
+              <li className="text-gray-400">
+                <span className="block">Web:</span>
+                <span className="block">www.tempspervi.com</span>
               </li>
               <li className="text-gray-400">
                 <span className="block">Zona:</span>
@@ -123,18 +110,21 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Temps per Vi. Tots els drets reservats.
+            &copy; {new Date().getFullYear()} Temps per Vi - Melcior Montero. Tots els drets reservats.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="#" className="text-gray-400 hover:text-white text-sm">
+            <a href="#" className="text-gray-400 hover:text-white text-sm">
               Política de privacitat
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-white text-sm">
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white text-sm">
               Termes i condicions
-            </Link>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white text-sm">
+              FUNDAE
+            </a>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

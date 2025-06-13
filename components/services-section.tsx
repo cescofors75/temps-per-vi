@@ -1,5 +1,4 @@
-import type React from "react"
-import { Wine, Users, GraduationCap, Store, CalendarDays, Utensils } from "lucide-react"
+import { Wine, Users, GraduationCap, Store, CalendarDays, Utensils, Phone, Mail, MapPin, Send, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export function ServicesSection() {
   return (
@@ -13,43 +12,69 @@ export function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ServiceCard
             icon={<Wine />}
-            title="Tasts de Vi"
-            description="Experiències de tast personalitzades per a grups privats, empreses o esdeveniments especials."
+            title="Tasts de Vi a Domicili"
+            description="Experiències sensorials personalitzades. Tast de 6 vins excepcionals per particulars, restaurants i empreses. Formatiu o lúdic, adaptat a les teves preferències."
           />
 
           <ServiceCard
             icon={<GraduationCap />}
-            title="Formació de Personal"
-            description="Formació especialitzada per a personal de sala de restaurants i hotels sobre servei i coneixement de vins."
+            title="Formació d'Equips de Sala"
+            description="Formació especialitzada de 8 hores per a personal de restaurants i hotels. Excel·lència en el servei, motivació d'equip i coneixement del vi. Bonificable per FUNDAE."
           />
 
           <ServiceCard
             icon={<Users />}
             title="Esdeveniments Privats"
-            description="Serveis de sommelier per a esdeveniments privats, celebracions i sopars especials."
+            description="Serveis de sommelier per a esdeveniments privats, celebracions especials i activitats de team building per empreses."
           />
 
           <ServiceCard
             icon={<Store />}
-            title="Assessorament a Cellers"
-            description="Consultoria per a cellers sobre posicionament, màrqueting i millora de productes."
+            title="Assessorament Professional"
+            description="Consultoria per a restaurants, hotels i espais d'esdeveniments sobre cartes de vi, servei i posicionament."
           />
 
           <ServiceCard
             icon={<CalendarDays />}
-            title="Rutes Enoturístiques"
-            description="Disseny i guiatge de rutes enoturístiques personalitzades per la Costa Brava."
+            title="Subscripció Mensual"
+            description="Comunitat de descoberta vinícola. Cada mes una ampolla seleccionada amb tast organolèptic en línia i notes detallades."
           />
 
           <ServiceCard
             icon={<Utensils />}
-            title="Maridatges"
-            description="Creació d'experiències de maridatge úniques entre gastronomia local i vins seleccionats."
+            title="Maridatges Especials"
+            description="Creació d'experiències de maridatge úniques entre gastronomia local i vins seleccionats per a ocasions especials."
           />
+        </div>
+
+        <div className="mt-16 bg-white p-8 rounded-lg shadow-sm">
+          <h3 className="text-2xl font-bold mb-6 text-center text-[#8c1c3c]">El Nostre Gran Valor: La Personalització</h3>
+          <p className="text-center text-lg mb-6 text-gray-600">
+            Cada tast que organitzem és únic i pensat exclusivament per a tu. Ens adaptem completament a les teves preferències.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h4 className="font-bold mb-2">Personalitzem Tot</h4>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Nombre de vins</li>
+                <li>• Estil del tast (formatiu, lúdic o combinat)</li>
+                <li>• Tipus de vi i fil conductor</li>
+                <li>• Durada de l'experiència</li>
+                <li>• Espai (casa, empresa o lloc especial)</li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h4 className="font-bold mb-2">Experiència Única</h4>
+              <p className="text-sm text-gray-600">
+                Viatge per diferents regions vitivinícoles, on parlarem del clima, terreny, varietat 
+                i posarem en valor la grandíssima feina que hi ha al darrere de cada ampolla.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function ServiceCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
@@ -61,5 +86,5 @@ function ServiceCard({ icon, title, description }: { icon: React.ReactNode; titl
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
-  )
+  );
 }
