@@ -42,7 +42,7 @@ export const es = {
     canRoca: {
       title: "Sommelier - El Celler de Can Roca",
       period: "2012 - 2022",
-      description: "Más de 10 años como sommelier en el restaurante con 3 estrellas Michelin, trabajando directamente con Joan Roca y su equipo en la creación de maridajes únicos."
+      description: "Más de 10 años de experiencia como maître-sommelier en el restaurante galardonado con 3 estrellas Michelin y reconocido como el mejor restaurante del mundo en varias ocasiones, trabajando y aprendiendo junto a los hermanos Roca y su equipo."
     },
     education: {
       title: "Formación Continua",
