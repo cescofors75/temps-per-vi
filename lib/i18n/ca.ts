@@ -117,9 +117,74 @@ export const ca = {
     about: "Sobre mi",
     services: "Serveis",
     experience: "Experiència",
+    fundae: "FUNDAE",
     events: "Esdeveniments",
     testimonials: "Testimonis",
     contact: "Contacte"
+  },
+  fundae: {
+    title: "Formació FUNDAE",
+    subtitle: "Potencia el teu equip sense cost per a la teva empresa. FUNDAE bonifica fins al 100% de la formació professional per a restaurants i hotels.",
+    badge: "Fins al 100% Bonificable",
+    cta: "Sol·licita informació sobre FUNDAE",
+    benefits: {
+      title: "Avantatges de FUNDAE",
+      cost: {
+        title: "Zero Cost per a l'Empresa",
+        description: "FUNDAE cobreix fins al 100% del cost de la formació. La teva empresa no paga res i el teu equip es professionalitza."
+      },
+      process: {
+        title: "Procés Simplificat",
+        description: "Ens encarreguem de tota la gestió administrativa i documentació necessària per a la bonificació."
+      },
+      business: {
+        title: "Retorn d'Inversió Garantit",
+        description: "Equips més qualificats generen millors vendes, clients més satisfets i major rendibilitat."
+      }
+    },
+    courses: {
+      title: "Formacions Bonificables",
+      note: "Tots els nostres cursos estan homologats i compleixen els requisits FUNDAE",
+      teamTraining: {
+        title: "Formació d'Equips de Sala",
+        hours: "20h",
+        description: "Tècniques d'atenció al client, treball en equip i motivació per a personal de sala."
+      },
+      wineKnowledge: {
+        title: "Coneixement del Vi",
+        hours: "16h",
+        description: "Introducció al món del vi, maridatges bàsics i tècniques de venda."
+      },
+      customerService: {
+        title: "Excel·lència en el Servei",
+        hours: "12h",
+        description: "Estàndards d'hospitalitat, gestió de queixes i fidelització de clients."
+      },
+      leadership: {
+        title: "Lideratge en Hospitalitat",
+        hours: "24h",
+        description: "Desenvolupament de competències directives per a caps d'equip i gerents."
+      }
+    },
+    howItWorks: {
+      title: "Com Funciona FUNDAE",
+      step1: {
+        title: "Contacta'ns",
+        description: "Ens expliques les necessitats de formació del teu equip"
+      },
+      step2: {
+        title: "Revisem la Bonificació",
+        description: "Calculem l'import disponible segons la plantilla de la teva empresa"
+      },
+      step3: {
+        title: "Gestionem la Documentació",
+        description: "Ens encarreguem de tots els tràmits administratius necessaris"
+      },
+      step4: {
+        title: "Impartim la Formació",
+        description: "El teu equip rep formació professional d'alta qualitat sense cost"
+      }
+    }
   }
 }
 

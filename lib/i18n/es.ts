@@ -117,9 +117,74 @@ export const es = {
     about: "Sobre mí",
     services: "Servicios",
     experience: "Experiencia",
+    fundae: "FUNDAE",
     events: "Eventos",
     testimonials: "Testimonios",
     contact: "Contacto"
+  },
+  fundae: {
+    title: "Formación FUNDAE",
+    subtitle: "Potencia tu equipo sin coste para tu empresa. FUNDAE bonifica hasta el 100% de la formación profesional para restaurantes y hoteles.",
+    badge: "Hasta el 100% Bonificable",
+    cta: "Solicita información sobre FUNDAE",
+    benefits: {
+      title: "Ventajas de FUNDAE",
+      cost: {
+        title: "Coste Cero para la Empresa",
+        description: "FUNDAE cubre hasta el 100% del coste de la formación. Tu empresa no paga nada y tu equipo se profesionaliza."
+      },
+      process: {
+        title: "Proceso Simplificado",
+        description: "Nos encargamos de toda la gestión administrativa y documentación necesaria para la bonificación."
+      },
+      business: {
+        title: "Retorno de Inversión Garantizado",
+        description: "Equipos más cualificados generan mejores ventas, clientes más satisfechos y mayor rentabilidad."
+      }
+    },
+    courses: {
+      title: "Formaciones Bonificables",
+      note: "Todos nuestros cursos están homologados y cumplen los requisitos FUNDAE",
+      teamTraining: {
+        title: "Formación de Equipos de Sala",
+        hours: "20h",
+        description: "Técnicas de atención al cliente, trabajo en equipo y motivación para personal de sala."
+      },
+      wineKnowledge: {
+        title: "Conocimiento del Vino",
+        hours: "16h",
+        description: "Introducción al mundo del vino, maridajes básicos y técnicas de venta."
+      },
+      customerService: {
+        title: "Excelencia en el Servicio",
+        hours: "12h",
+        description: "Estándares de hospitalidad, gestión de quejas y fidelización de clientes."
+      },
+      leadership: {
+        title: "Liderazgo en Hospitalidad",
+        hours: "24h",
+        description: "Desarrollo de competencias directivas para jefes de equipo y gerentes."
+      }
+    },
+    howItWorks: {
+      title: "Cómo Funciona FUNDAE",
+      step1: {
+        title: "Contáctanos",
+        description: "Nos explicas las necesidades de formación de tu equipo"
+      },
+      step2: {
+        title: "Revisamos la Bonificación",
+        description: "Calculamos el importe disponible según la plantilla de tu empresa"
+      },
+      step3: {
+        title: "Gestionamos la Documentación",
+        description: "Nos encargamos de todos los trámites administrativos necesarios"
+      },
+      step4: {
+        title: "Impartimos la Formación",
+        description: "Tu equipo recibe formación profesional de alta calidad sin coste"
+      }
+    }
   }
 }
 

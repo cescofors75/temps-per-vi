@@ -118,9 +118,74 @@ export const en = {
     about: "About",
     services: "Services",
     experience: "Experience",
+    fundae: "FUNDAE",
     events: "Events",
     testimonials: "Testimonials",
     contact: "Contact"
+  },
+  fundae: {
+    title: "FUNDAE Training",
+    subtitle: "Empower your team at no cost to your company. FUNDAE subsidizes up to 100% of professional training for restaurants and hotels.",
+    badge: "Up to 100% Subsidized",
+    cta: "Request FUNDAE information",
+    benefits: {
+      title: "FUNDAE Benefits",
+      cost: {
+        title: "Zero Cost for the Company",
+        description: "FUNDAE covers up to 100% of training costs. Your company pays nothing and your team becomes more professional."
+      },
+      process: {
+        title: "Simplified Process",
+        description: "We handle all administrative management and documentation required for the subsidy."
+      },
+      business: {
+        title: "Guaranteed Return on Investment",
+        description: "More qualified teams generate better sales, more satisfied customers, and greater profitability."
+      }
+    },
+    courses: {
+      title: "Subsidizable Training",
+      note: "All our courses are certified and meet FUNDAE requirements",
+      teamTraining: {
+        title: "Service Team Training",
+        hours: "20h",
+        description: "Customer service techniques, teamwork, and motivation for service staff."
+      },
+      wineKnowledge: {
+        title: "Wine Knowledge",
+        hours: "16h",
+        description: "Introduction to the wine world, basic pairings, and sales techniques."
+      },
+      customerService: {
+        title: "Service Excellence",
+        hours: "12h",
+        description: "Hospitality standards, complaint management, and customer loyalty."
+      },
+      leadership: {
+        title: "Hospitality Leadership",
+        hours: "24h",
+        description: "Development of management skills for team leaders and managers."
+      }
+    },
+    howItWorks: {
+      title: "How FUNDAE Works",
+      step1: {
+        title: "Contact Us",
+        description: "Tell us about your team's training needs"
+      },
+      step2: {
+        title: "Review the Subsidy",
+        description: "We calculate the available amount based on your company's workforce"
+      },
+      step3: {
+        title: "Manage Documentation",
+        description: "We handle all necessary administrative procedures"
+      },
+      step4: {
+        title: "Deliver Training",
+        description: "Your team receives high-quality professional training at no cost"
+      }
+    }
   }
 }
 

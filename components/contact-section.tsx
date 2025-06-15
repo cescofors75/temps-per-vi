@@ -97,7 +97,7 @@ export function ContactSection() {
                 >
                   <option value="">Selecciona un servei</option>
                   <option value="tasting">Tasts de vi a domicili</option>
-                  <option value="training">Formació d'equips de sala</option>
+                  <option value="training">Formació d'equips de sala (FUNDAE)</option>
                   <option value="events">Esdeveniments privats</option>
                   <option value="consulting">Assessorament professional</option>
                   <option value="subscription">Subscripció mensual</option>

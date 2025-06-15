@@ -30,40 +30,55 @@ export function ExperienceSection() {
           />
         </div>
 
-        <div className="mt-16 bg-gray-50 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-6 text-center">Formació i Beneficis per al Teu Equip</h3>
+        <div className="mt-16 bg-gradient-to-r from-green-50 to-[#8c1c3c]/5 p-8 rounded-lg border border-green-200">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold mb-4">
+              <Store className="w-5 h-5 mr-2" />
+              FUNDAE Bonificable - Fins al 100%
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Formació Professional per al Teu Equip</h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">Inverteix en l'excel·lència del teu servei sense cost per a la teva empresa</p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm">
               <div className="w-16 h-16 bg-[#8c1c3c] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
                 <GraduationCap className="w-8 h-8" />
               </div>
-              <h4 className="font-bold mb-2">Formacions per al Teu Equip</h4>
-              <p className="text-gray-600 text-sm">Claus per oferir un servei impecable i fidelitzar clients</p>
+              <h4 className="font-bold mb-2">Formacions Especialitzades</h4>
+              <p className="text-gray-600 text-sm">Cursos dissenyats específicament per a professionals de l'hospitalitat</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#8c1c3c] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
                 <Users className="w-8 h-8" />
               </div>
               <h4 className="font-bold mb-2">Motivació d'Equip</h4>
               <p className="text-gray-600 text-sm">Estratègies per millorar la col·laboració i crear un ambient positiu</p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm">
               <div className="w-16 h-16 bg-[#8c1c3c] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
                 <Wine className="w-8 h-8" />
               </div>
-              <h4 className="font-bold mb-2">Introducció al Món del Vi</h4>
-              <p className="text-gray-600 text-sm">Conèixer per poder vendre i comunicar de manera atractiva</p>
+              <h4 className="font-bold mb-2">Coneixement del Vi</h4>
+              <p className="text-gray-600 text-sm">Formació completa per oferir un servei d'excel·lència</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#8c1c3c] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm border-2 border-green-200">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
                 <Store className="w-8 h-8" />
               </div>
-              <h4 className="font-bold mb-2">FUNDAE Bonificable</h4>
-              <p className="text-gray-600 text-sm">Formacions finançades total o parcialment</p>
+              <h4 className="font-bold mb-2 text-green-800">100% Bonificable</h4>
+              <p className="text-green-700 text-sm font-medium">La teva empresa no paga res - FUNDAE ho cobreix</p>
             </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <a href="#fundae" className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors">
+              <Store className="mr-2 h-5 w-5" />
+              Descobreix com funciona FUNDAE
+            </a>
           </div>
         </div>
       </div>

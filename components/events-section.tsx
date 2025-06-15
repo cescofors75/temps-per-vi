@@ -28,7 +28,7 @@ export function EventsSection() {
             title="Formació d'Equips de Sala"
             date="15 de maig, 2025"
             location="Restaurant Can Candela"
-            description="Formació especialitzada de 8 hores per equips de sala. Servei d'excel·lència, motivació d'equip i coneixement del vi."
+            description="Formació especialitzada de 8 hores per equips de sala. Servei d'excel·lència, motivació d'equip i coneixement del vi. 100% bonificable via FUNDAE."
           />
 
           <EventCard
@@ -40,12 +40,12 @@ export function EventsSection() {
           />
         </div>
 
-        <div className="text-center mt-12">
+       {/* <div className="text-center mt-12">
           <button className="px-6 py-3 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium">
             <CalendarDays className="mr-2 h-4 w-4 inline" />
             Veure tots els esdeveniments
           </button>
-        </div>
+        </div>*/}
       </div>
     </section>
   );

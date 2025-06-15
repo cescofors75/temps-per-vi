@@ -117,9 +117,74 @@ export const fr = {
     about: "À propos",
     services: "Services",
     experience: "Expérience",
+    fundae: "FUNDAE",
     events: "Événements",
     testimonials: "Témoignages",
     contact: "Contact"
+  },
+  fundae: {
+    title: "Formation FUNDAE",
+    subtitle: "Renforcez votre équipe sans coût pour votre entreprise. FUNDAE subventionne jusqu'à 100% de la formation professionnelle pour restaurants et hôtels.",
+    badge: "Jusqu'à 100% Subventionné",
+    cta: "Demander des informations sur FUNDAE",
+    benefits: {
+      title: "Avantages de FUNDAE",
+      cost: {
+        title: "Coût Zéro pour l'Entreprise",
+        description: "FUNDAE couvre jusqu'à 100% des coûts de formation. Votre entreprise ne paie rien et votre équipe se professionnalise."
+      },
+      process: {
+        title: "Processus Simplifié",
+        description: "Nous nous occupons de toute la gestion administrative et de la documentation nécessaire pour la subvention."
+      },
+      business: {
+        title: "Retour sur Investissement Garanti",
+        description: "Des équipes plus qualifiées génèrent de meilleures ventes, des clients plus satisfaits et une rentabilité accrue."
+      }
+    },
+    courses: {
+      title: "Formations Subventionnables",
+      note: "Tous nos cours sont certifiés et répondent aux exigences FUNDAE",
+      teamTraining: {
+        title: "Formation d'Équipes de Service",
+        hours: "20h",
+        description: "Techniques de service client, travail d'équipe et motivation pour le personnel de service."
+      },
+      wineKnowledge: {
+        title: "Connaissance du Vin",
+        hours: "16h",
+        description: "Introduction au monde du vin, accords de base et techniques de vente."
+      },
+      customerService: {
+        title: "Excellence du Service",
+        hours: "12h",
+        description: "Standards d'hospitalité, gestion des plaintes et fidélisation de la clientèle."
+      },
+      leadership: {
+        title: "Leadership en Hospitalité",
+        hours: "24h",
+        description: "Développement de compétences managériales pour chefs d'équipe et gérants."
+      }
+    },
+    howItWorks: {
+      title: "Comment Fonctionne FUNDAE",
+      step1: {
+        title: "Contactez-nous",
+        description: "Expliquez-nous les besoins de formation de votre équipe"
+      },
+      step2: {
+        title: "Examinons la Subvention",
+        description: "Nous calculons le montant disponible selon l'effectif de votre entreprise"
+      },
+      step3: {
+        title: "Gérons la Documentation",
+        description: "Nous nous occupons de toutes les démarches administratives nécessaires"
+      },
+      step4: {
+        title: "Dispensons la Formation",
+        description: "Votre équipe reçoit une formation professionnelle de haute qualité sans coût"
+      }
+    }
   }
 }
 

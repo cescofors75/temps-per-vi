@@ -77,6 +77,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#fundae" className="text-gray-400 hover:text-white">
+                  {t.navigation.fundae}
+                </a>
+              </li>
+              <li>
                 <a href="#events" className="text-gray-400 hover:text-white">
                   {t.navigation.events}
                 </a>
