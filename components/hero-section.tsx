@@ -39,12 +39,12 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <button 
+           {/* <button 
               onClick={() => scrollToSection('contact')} 
               className="px-6 py-3 bg-[#8c1c3c] hover:bg-[#6d1530] text-white rounded-lg font-medium transition-colors w-full sm:w-auto"
             >
               {t.hero.contact}
-            </button>
+            </button>*/}
             <button 
               onClick={() => scrollToSection('services')} 
               className="px-6 py-3 border-2 border-white text-white hover:bg-white/20 rounded-lg font-medium transition-colors w-full sm:w-auto"
