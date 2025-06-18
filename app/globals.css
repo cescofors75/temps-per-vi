@@ -60,4 +60,33 @@
 
 html {
   scroll-behavior: smooth;
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+}
+
+body {
+  /* Ensure no horizontal overflow */
+  overflow-x: hidden;
+  /* Better text rendering on mobile */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Ensure containers don't overflow */
+.container {
+  max-width: 100%;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  * {
+    /* Prevent zoom on input focus on iOS */
+    font-size: inherit;
+  }
+  
+  /* Ensure minimum touch target size */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
