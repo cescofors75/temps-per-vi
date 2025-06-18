@@ -73,13 +73,7 @@ export function ExperienceSection() {
               <p className="text-green-700 text-sm font-medium">La teva empresa no paga res - FUNDAE ho cobreix</p>
             </div>
           </div>
-          
-          <div className="text-center mt-8">
-            <a href="#fundae" className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors">
-              <Store className="mr-2 h-5 w-5" />
-              Descobreix com funciona FUNDAE
-            </a>
-          </div>
+        
         </div>
       </div>
     </section>
