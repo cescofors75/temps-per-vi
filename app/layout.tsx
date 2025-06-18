@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/language-context"
+import { SafariViewportFix } from "@/components/safari-viewport-fix"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -17,8 +18,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 }
 
 export default function RootLayout({
@@ -28,7 +27,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ca" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                // Ejecutar inmediatamente para iOS
+                var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+                if (isIOS) {
+                  var meta = document.createElement('meta');
+                  meta.name = 'viewport';
+                  meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover';
+                  document.head.appendChild(meta);
+                  
+                  // Forzar layout recalculation
+                  document.documentElement.style.zoom = 1;
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>
+        <SafariViewportFix />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
             {children}

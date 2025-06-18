@@ -62,6 +62,11 @@ html {
   scroll-behavior: smooth;
   /* Prevent horizontal scrolling */
   overflow-x: hidden;
+  /* Force proper scaling on Safari */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Safari mobile viewport fix */
+  height: -webkit-fill-available;
 }
 
 body {
@@ -70,11 +75,61 @@ body {
   /* Better text rendering on mobile */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  /* Safari mobile viewport fix */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 /* Ensure containers don't overflow */
 .container {
   max-width: 100%;
+}
+
+/* iOS Universal fixes (Safari, Chrome, Firefox, etc.) */
+@supports (-webkit-touch-callout: none) {
+  html {
+    height: -webkit-fill-available;
+    /* Force hardware acceleration */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    /* Prevent elastic scroll */
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Force proper rendering */
+  * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+/* Force minimum scale on all iOS browsers */
+@media screen and (max-device-width: 768px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  body {
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* iOS Safari viewport height fix */
+@supports (height: 100dvh) {
+  .min-h-screen {
+    min-height: 100dvh;
+  }
 }
 
 /* Mobile optimizations */
@@ -88,5 +143,17 @@ body {
   button, a {
     min-height: 44px;
     min-width: 44px;
+  }
+  
+  /* Safari mobile specific */
+  @supports (-webkit-touch-callout: none) {
+    html {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    body {
+      -webkit-overflow-scrolling: touch;
+    }
   }
 }
