@@ -20,7 +20,9 @@ export function EventsSection() {
             title="Tast de Vins Sant Jordi"
             date="22 d'abril, 2025"
             location="Sala de Juntes - Farinera Teixidor"
-            description="Celebra Sant Jordi amb una experiència única de tast de 6 vins excepcionals. Viatge per regions vitivinícoles catalanes. Places limitades!"
+            description="Team Building amb Can Candela i Temps Per Vi
+T’agradaria oferir al teu equip una experiència diferent i significativa? Et proposem una activitat de Team Building única que combina una cata de vins amb un taller creatiu d’espelmes. Tastarem vins, n’analitzarem els aromes i, a partir d’aquests, crearàs la teva pròpia espelma ecològica amb ampolles de vi reciclades.
+Una activitat sensorial i sostenible que reforça la cohesió d’equip i t’emportes un record cap a casa."
           />
 
           <EventCard
@@ -28,7 +30,9 @@ export function EventsSection() {
             title="Formació d'Equips de Sala"
             date="15 de maig, 2025"
             location="Restaurant Can Candela"
-            description="Formació especialitzada de 8 hores per equips de sala. Servei d'excel·lència, motivació d'equip i coneixement del vi. 100% bonificable via FUNDAE."
+            description="Reserva’t un dimecres al mes!
+T’esperem al tast de vins que fem mensualment al restaurant Dit i Fet. Una experiència única per descobrir nous vins, compartir bons moments i gaudir d’un ambient acollidor.
+Places limitades. Obrim llistes! Demana més informació i no et quedis fora."
           />
 
           <EventCard

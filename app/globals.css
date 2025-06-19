@@ -59,7 +59,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   /* Prevent horizontal scrolling */
   overflow-x: hidden;
   /* Force proper scaling on Safari */
@@ -130,6 +129,11 @@ body {
   .min-h-screen {
     min-height: 100dvh;
   }
+}
+
+/* Use CSS variable for iOS height fix */
+.min-h-screen {
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Mobile optimizations */

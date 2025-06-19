@@ -16,7 +16,7 @@ export function AboutSection() {
               {t.about.description}
             </p>
             <p className="text-base sm:text-lg mb-6 leading-relaxed">
-              {t.about.mission}
+            {/*t.about.mission*/}
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-4">

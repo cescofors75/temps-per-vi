@@ -11,7 +11,14 @@ export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Usar scrollTo con offset para mejor control
+      const elementTop = element.offsetTop;
+      const offset = 80; // Offset para evitar que se oculte detrás del header
+      
+      window.scrollTo({
+        top: elementTop - offset,
+        behavior: 'smooth'
+      });
     }
   };
 

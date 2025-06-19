@@ -28,25 +28,6 @@ export default function RootLayout({
   return (
     <html lang="ca" suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                // Ejecutar inmediatamente para iOS
-                var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-                if (isIOS) {
-                  var meta = document.createElement('meta');
-                  meta.name = 'viewport';
-                  meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover';
-                  document.head.appendChild(meta);
-                  
-                  // Forzar layout recalculation
-                  document.documentElement.style.zoom = 1;
-                }
-              })();
-            `,
-          }}
-        />
       </head>
       <body className={inter.className}>
         <SafariViewportFix />
