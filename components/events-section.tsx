@@ -17,9 +17,9 @@ export function EventsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <EventCard
             image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/488260734_17892024252221828_405772439183229151_n.jpg-ABOx7i2iIPQiVlQ8i9V12drprDQix0.jpeg"
-            title="Tast de Vins Sant Jordi"
-            date="22 d'abril, 2025"
-            location="Sala de Juntes - Farinera Teixidor"
+            title="Experiències per empreses"
+            date="2025"
+            location="Demana informació."
             description="Team Building amb Can Candela i Temps Per Vi
 T’agradaria oferir al teu equip una experiència diferent i significativa? Et proposem una activitat de Team Building única que combina una cata de vins amb un taller creatiu d’espelmes. Tastarem vins, n’analitzarem els aromes i, a partir d’aquests, crearàs la teva pròpia espelma ecològica amb ampolles de vi reciclades.
 Una activitat sensorial i sostenible que reforça la cohesió d’equip i t’emportes un record cap a casa."
@@ -27,9 +27,9 @@ Una activitat sensorial i sostenible que reforça la cohesió d’equip i t’em
 
           <EventCard
             image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/480280779_17869262043313976_971015795609725576_n.jpg-hYdSdeAMEMwFiP8SuJdRpmEap0Fqk6.jpeg"
-            title="Formació d'Equips de Sala"
-            date="15 de maig, 2025"
-            location="Restaurant Can Candela"
+            title="Tast de vins mensual"
+            date="Dimecres al mes"
+            location="Restaurant Ditifet"
             description="Reserva’t un dimecres al mes!
 T’esperem al tast de vins que fem mensualment al restaurant Dit i Fet. Una experiència única per descobrir nous vins, compartir bons moments i gaudir d’un ambient acollidor.
 Places limitades. Obrim llistes! Demana més informació i no et quedis fora."

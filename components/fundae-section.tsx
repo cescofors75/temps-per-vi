@@ -64,7 +64,7 @@ export function FundaeSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:border-[#8c1c3c] transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="font-semibold">{t.fundae.courses.teamTraining.title}</h4>
-                  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.teamTraining.hours}</span>
+                {/*  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.teamTraining.hours}</span>*/}
                 </div>
                 <p className="text-gray-600 text-sm">{t.fundae.courses.teamTraining.description}</p>
               </div>
@@ -72,7 +72,7 @@ export function FundaeSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:border-[#8c1c3c] transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="font-semibold">{t.fundae.courses.wineKnowledge.title}</h4>
-                  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.wineKnowledge.hours}</span>
+                {/*  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.wineKnowledge.hours}</span>*/}
                 </div>
                 <p className="text-gray-600 text-sm">{t.fundae.courses.wineKnowledge.description}</p>
               </div>
@@ -80,7 +80,7 @@ export function FundaeSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:border-[#8c1c3c] transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="font-semibold">{t.fundae.courses.customerService.title}</h4>
-                  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.customerService.hours}</span>
+                {/*  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.customerService.hours}</span>*/}
                 </div>
                 <p className="text-gray-600 text-sm">{t.fundae.courses.customerService.description}</p>
               </div>
@@ -88,7 +88,7 @@ export function FundaeSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:border-[#8c1c3c] transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="font-semibold">{t.fundae.courses.leadership.title}</h4>
-                  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.leadership.hours}</span>
+                 {/* <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">{t.fundae.courses.leadership.hours}</span>*/}
                 </div>
                 <p className="text-gray-600 text-sm">{t.fundae.courses.leadership.description}</p>
               </div>
